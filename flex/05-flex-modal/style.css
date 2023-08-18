@@ -16,10 +16,31 @@ body {
 }
 
 .modal {
+  display: flex;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 12px;
+  gap: 12px
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  justify-content:center;
+  gap: 12px
+}
+
+.continue-cancel {
+  display: flex;
+  gap: 8px 
+}
+
+.header {
+  font-weight: bold;
+  font-size: large;
 }
 
 .icon {
@@ -29,8 +50,9 @@ body {
   background: lavender;
   width: 42px;
   height: 42px;
-  border-radius: 50%;
+  border-radius: 500%;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
 }
@@ -44,6 +66,7 @@ body {
   height: 24px;
   width: 24px;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   border: 1px solid #eee;
